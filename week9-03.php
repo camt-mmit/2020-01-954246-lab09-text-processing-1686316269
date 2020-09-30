@@ -6,6 +6,9 @@ for($k=0;;$k++){
     break;
     }
 }fclose($c);
+/**
+ * You cannot use this approache because it changes the single word, e.g. university, too.
+ */
 $cga=implode(" ",$cg);
 $cgs=explode(" ",$cga);
 for($j=0;$j<=count($cgs);$j++){
